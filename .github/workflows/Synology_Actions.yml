@@ -1,6 +1,4 @@
 name: 编译Synology
-name: 构建
-
 on:
   workflow_dispatch:
     inputs:
