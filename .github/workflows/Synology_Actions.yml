@@ -53,6 +53,7 @@ jobs:
 
       - name: 准备构建环境
         run: |
+          chmod 755 ./redpill_tool_chain.sh
           ./redpill_tool_chain.sh build ${{matrix.platform}}-${{matrix.version}}
 
       - name: 配置引导镜像
